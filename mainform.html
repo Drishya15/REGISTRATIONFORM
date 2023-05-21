@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+git clone <https://github.com/Drishya15/REGISTRATIONFORM.git>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registration Form</title>
+  </head>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 20px;
+    }
+    .heading {
+      margin-top: 2%;
+      background-color: aqua;
+      width: 50%;
+      padding-top: 3%;
+      text-align: center;
+      font-weight: 700;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      justify-content: center;
+      align-content: center;
+    }
+    .form-details {
+      display: flex;
+      justify-content: center;
+      align-content: center;
+      margin-top: 20px;
+    }
+    form {
+      width: 50%;
+    }
+    label {
+      display: block;
+      margin-top: 10px;
+      font-weight: bold;
+    }
+    input[type="text"],
+    input[type="email"],
+    input[type="number"],
+    select {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      margin-top: 5px;
+    }
+    input[type="radio"],
+    input[type="checkbox"] {
+      margin-top: 5px;
+      margin-right: 5px;
+    }
+    input[type="submit"] {
+      background-color:coral;
+      color: white;
+      padding: 10px 15px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      margin-top: 10px;
+    }
+    input[type="submit"]:hover {
+      background-color:darkmagenta;
+    }
+  </style>
+  <body>
+    <div class="heading">
+    Registration Form
+    </div>
+    <div class="form-details">
+    <form>
+        <label for="name">Name:</label><br>
+        <input type="text" id="name" name="name" required><br>
+
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" required><br>
+
+        <label for="age">Age:</label><br>
+        <input type="number" id="age" name="age" required><br>
+
+        <label>Gender:</label><br>
+        <label for="male">
+          <input type="radio" id="male" name="gender" value="male" required>
+          Male
+        </label><br>
+        <label for="female">
+          <input type="radio" id="female" name="gender" value="female" required>
+          Female
+        </label><br
+    
+
+        <label for="interests">Interests:</label><br>
+        <label for="music">
+          <input type="checkbox" id="music" name="interests" value="music">
+          Music
+        </label><br>
+        <label for="sports">
+          <input type="checkbox" id="sports" name="interests" value="sports">
+          Sports
+        </label><br>
+        <label for="art">
+          <input type="checkbox" id="art" name="interests" value="art">
+          Art
+        </label><br>
+        <label for="technology">
+          <input type="checkbox" id="technology" name="interests" value="technology">
+          Technology
+        </label><br>
+    
+      <input type="submit" value="Submit" />
+    </form>
+    </div>
+  </body>
+</html>
